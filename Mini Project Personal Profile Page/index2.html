@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 1%;
+            margin: 15px auto;
+            background-color: rgb(97, 123, 218);
+            border: 2px solid rgb(3, 5, 54);
+            width: 100%;
+            height: 50%;
+            text-align: left;
+
+        }
+
+        span {
+            padding: 1%;
+            margin: auto;
+            background-color: rgb(97, 123, 218);
+            border: 2px solid rgb(3, 5, 54);
+
+        }
+
+        div:hover {
+            background-color: rgb(69, 49, 201);
+        }
+
+        div:active {
+            background-color: rgb(2, 2, 16);
+        }
+
+        div {
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="post">
+        <div>
+            <label for="Full Name">Full name</label><br> <br>
+            <input type="Full Name" id="Full Name" placeholder="">
+        </div> <br>
+        <div>
+            <label for="Email"> Email</label><br> <br>
+            <input type="Email" id="Email" placeholder="">
+        </div> <br>
+        <div>
+            <label for="password">Password</label> <br><br>
+            <input type="password" id="password" placeholder="">
+        </div><br>
+        <div>
+            <label for="age">Age</label><br> <br>
+            <input type="age" id="age" placeholder="">
+        </div> <br>
+        <div>
+            <label for="Date of Birth">Date of Birth</label><br>
+            <input type="date">
+        </div> <br>
+        <div>
+            <label for="Gender">Gender</label> <br>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+        </div><br>
+        <div>
+            <label for="Skills">Skills</label> <br>
+            <input type="checkbox" id="HTML">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="CSS">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="JawaScript">
+            <label for="JawaScript">JawaScript</label>
+        </div>
+        <br>
+        <div>
+            <label for="Upload Resume">Upload Resume</label> <br>
+            <input type="file">
+        </div> <br>
+        <span>
+            <input type="submit" value="Register"> <input type="reset" value="Clear">
+        </span><br>
+
+    </form>
+
+
+</body>
+
+</html>
