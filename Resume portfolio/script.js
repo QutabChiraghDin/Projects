@@ -1,0 +1,15 @@
+const menuBtn = document.getElementById("menuBtn"), navMenu = document.getElementById("navMenu"), themeBtn = document.getElementById("themeBtn"), topBtn = document.getElementById("topBtn"), typing = document.getElementById("typing");
+menuBtn.addEventListener("click", () => navMenu.classList.toggle("open"));
+document.querySelectorAll(".nav-link").forEach(a => a.addEventListener("click", () => navMenu.classList.remove("open")));
+const words = ["Web Developer", "BSCS Student", "Frontend Learner", "Problem Solver"]; let wi = 0, ci = 0, deleting = false;
+function type() { const word = words[wi]; typing.textContent = deleting ? word.slice(0, --ci) : word.slice(0, ++ci); if (!deleting && ci === word.length) { deleting = true; setTimeout(type, 1200); return } if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length } setTimeout(type, deleting ? 55 : 90) } type();
+themeBtn.addEventListener("click", () => { document.body.classList.toggle("light"); themeBtn.textContent = document.body.classList.contains("light") ? "☀" : "☾"; });
+const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible") }), { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+window.addEventListener("scroll", () => topBtn.classList.toggle("show", scrollY > 500));
+topBtn.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+document.getElementById("year").textContent = new Date().getFullYear();
+const form = document.getElementById("contactForm"), msg = document.getElementById("formMessage");
+form.addEventListener("submit", e => { e.preventDefault(); msg.textContent = "Thanks! This demo form is ready to connect to your email service."; form.reset(); });
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", () => { let current = "home"; sections.forEach(s => { if (scrollY >= s.offsetTop - 140) current = s.id }); document.querySelectorAll(".nav-link").forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current)); });
