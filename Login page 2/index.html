@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(images.jpg);
+
+        }
+
+        form {
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgb(6, 4, 4);
+            border-radius: 17px;
+            height: 80vh;
+            width: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        form {
+            /* margin: 10px; */
+            position: absolute;
+            width: 350px;
+            margin: 30px 0;
+            margin-left: 450px;
+        }
+
+        form label {
+            color: aliceblue;
+            font-size: 1.2rem;
+            margin: 10px;
+            position: absolute;
+            left: 10px;
+
+
+
+
+        }
+
+        form input[type="email"],
+        form input[type="password"] {
+            color: aliceblue;
+            background-color: transparent;
+            height: 50px; 
+            border: none;
+            outline: none;
+            border-bottom: 3px solid white;
+            height: 10vh; 
+             width: 20vw;
+            margin: 20px;
+
+
+        }
+
+        .login {
+            color: aliceblue;
+            font-size: 2rem;
+            top: 100px;
+        }
+
+        .red {
+            height: 50px;
+            width: 100px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin: 15px;
+            font-size: 1.4rem;
+            background-color: rgb(227, 219, 219);
+            color: rgb(0, 0, 0);
+            border-bottom: none;
+            padding: 10px;
+        }
+        .b{
+            width: 15px;
+        }
+        
+
+        p>a {
+            color: aliceblue;
+            font-size: 15px;
+        }
+        footer{
+            
+           color: rgb(233, 240, 232);
+           font-size: 2rem;
+           position: fixed;
+           bottom: 20px;
+            left: 30%;
+        }
+        .red:hover{
+            color: rgb(202, 214, 214);
+            background-color: transparent;
+        }
+        .red:active{
+            background-color: rgb(77, 110, 27);
+            border: 2px solid black;
+        }
+        a:hover{
+            color: aliceblue;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: 800;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <form action="action">
+        <div class="login">
+            Login
+        </div>
+        <div class="form">
+            <label for="email">Email</label>
+            <input type="email" required>
+        </div>
+        <div class="form">
+            <label for="password">Password</label>
+            <input type="password" required>
+        </div>
+        <div>
+            <p class="blue">
+                <input class="b" type="checkbox">Remember me <a href="#">Forget password</a>
+            </p>
+        </div>
+        <p>
+            <input class="red" type="submit" value="Login">
+        </p>
+        <p>Dont have an account <a href="#">Register</a> </p>
+
+    </form>
+    <footer>About our Nature is a journey of our dreams  </footer>
+
+</body>
+
+</html>
