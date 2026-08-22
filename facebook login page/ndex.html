@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page 3</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-image: url(images.jpg);
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+
+        }
+        form{
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgb(238, 232, 232);
+            border-radius: 50px;
+            width: 300px;
+            height: 370px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            
+            
+
+        }
+        div input[type="email"],
+        div input[type="password"]{
+            border: none;
+            border-radius: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+             font-size: 25px;
+            margin: 10px; 
+            border-bottom: 2px solid white;
+            color: aliceblue;
+            width: 200px;
+
+            outline: none;
+        }
+        div label{
+            color: aliceblue;
+            font-size: 20px;
+           
+            margin-bottom: 50px;
+        }
+        .login{
+            
+            top: 25px;
+            font-size: 2rem;
+            color: aliceblue;
+        }
+        .red{
+            
+            margin-top: 15px;
+            color: aliceblue;
+        }
+        p>a{
+            color: aliceblue;
+        }
+        p{
+            color: aliceblue;
+            margin-top: 10px;
+        }
+        .btn{
+            background-color: aliceblue;
+            width: 100px;
+            height: 10vh;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 17px;
+        }
+        .btn:hover{
+            color: aliceblue;
+            background-color: transparent;
+            border-color: rgb(7, 61, 148);
+        }
+        .btn:active{
+            background-color: rgb(22, 22, 72);
+        }
+
+    </style>
+</head>
+<body>
+    <form action="action">
+        <div class="login">Login</div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" required>
+        </div>
+        <p class="red">
+            <input type="checkbox"> Remember me <a href="#">Forget password</a>
+        </p>
+        <input class="btn" type="submit" value="Login">
+        <p class="red">
+            Dont have an account <a href="#">Register</a>
+        </p>
+    </form>
+    
+</body>
+</html>
