@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            background-color: gray;
+         
+            
+        }
+        .main{
+            height: 100vh;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:25px 50px ;  
+           
+        }
+        .signin{
+            background-color: rgb(12, 68, 133);
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .signin:hover{
+            background-color: rgb(18, 28, 92);
+        }
+        .logo{
+            color: rgb(12, 68, 133);
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .logo:hover{
+            color: rgb(18, 28, 92);
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            margin-top: 150px;
+            color: aliceblue;
+        }
+        .content h1{
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        .content h2{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        .content p{
+            font-size: 20px;
+        }
+
+        .email{
+            border: none;
+            border-radius: 5px;
+            width: 30vw;
+            height: 10vh;
+            padding: 10px;
+            margin-left: 460px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .btn input{
+            border: none;
+            border-radius: 15px;
+            width: 13vw;
+            height: 10vh;
+            background-color:rgb(12, 68, 133) ;
+            color: aliceblue;
+            font-size: 20px;
+            margin-left: 560px;
+             margin-top: 10px;
+        }
+        .btn input:hover{
+            background-color: rgb(18, 28, 92);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                NETFLIX
+            </div>
+            <div class="signin">
+                Sign in
+            </div>
+            </nav>
+            <div class="content">
+                <h1>Unlimited movies , TV Shows and many more</h1>
+                <h2>Watch anytime , Cancel anytime</h2>
+                <p>
+                    Ready to watch ? Enter your email and restart your membership
+                </p>
+            </div>
+            <div >
+                <input class="email" type="email" placeholder="Enter your Email">
+            </div>
+            <div class="btn">
+                <input type="button" value="Get Started">
+            </div>
+        
+    </div>
+    
+</body>
+</html>
